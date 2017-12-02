@@ -16,6 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    repositories {
+        jcenter()
+        maven { url "https://dl.bintray.com/drummer-aidan/maven" }
+    }
 }
 
 dependencies {
@@ -29,4 +34,6 @@ dependencies {
 
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    compile 'com.afollestad:material-camera:0.4.4'
 }
